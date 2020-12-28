@@ -1,0 +1,4 @@
+{
+    "mongoURI":"mongodb+srv://pragya:database1234@cluster0.neyqt.mongodb.net/<dbname>?retryWrites=true&w=majority",
+    "baseUrl":"https://localhost:5500"
+}
