@@ -1,18 +1,14 @@
 const express=require('express')
 const mongoose=require('mongoose')
-// const connectDB=require('./config/db')
+const connectDB=require('./config/db')
 const ShortUrl=require('./models/shortUrl')
 const app=express()
 
 //connect to database
-//   connectDB();
+  connectDB();
 
 const PORT=5500
 app.listen(PORT,()=>console.log(`server is started at server ${PORT}`))
-
-mongoose.connect('mongodb://localhost/urlShortener',{
-    useNewUrlParser:true,useUnifiedTopology:true
-})
 
 app.set('view engine','ejs')
 app.use(express.urlencoded({extended:false}))
